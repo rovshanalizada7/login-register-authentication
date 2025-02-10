@@ -1,8 +1,8 @@
 export const HomePage = () => {
   return (
     <div>
-      HomePage
-      <button>go to profile</button>
+      <h1>HomePage</h1>
+      <button>Go to profile</button>
     </div>
   );
 };

@@ -25,22 +25,33 @@ export const Register = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)}>
+    <section className='w-[100%] h-[100vh] flex justify-center items-center bg-[url("https://livedemo00.template-help.com/wt_prod-10492/theme/images/slide-2.jpg")] bg-cover bg-center bg-no-repeat'>
+      <div className='bg-[#fff] w-[450px] h-[450px] rounded-[10px]'>
+        <h1 className='text-center text-[30px] font-extrabold my-5 font-serif'>Sign Up</h1>
+        <form className='flex flex-col justify-center items-center gap-4 p-3' onSubmit={handleSubmit(onSubmit)}>
       <input
-        style={{ display: 'block' }}
+        className='border-1 p-2 pr-[7rem] border-gray rounded-[5px] outline-none  border-gray-500 font-serif '
         type="text"
+        placeholder='Username...'
         {...register('username')}
       />
       {errors?.username && <div>{errors.username.message}</div>}
-      <input style={{ display: 'block' }} type="text" {...register('name')} />
+      <input 
+       className='border-1 p-2 pr-[7rem]  border-gray rounded-[5px] outline-none border-gray-500 font-serif' 
+       placeholder='Name...'
+       type="text" {...register('name')} />
       {errors?.name && <div>{errors.name.message}</div>}
       <input
-        style={{ display: 'block' }}
+        className='border-1 p-2 pr-[7rem] rounded-[5px] border-gray outline-none  border-gray-500 font-serif  '
+        placeholder='Password...'
         type="password"
         {...register('password')}
       />
       {errors?.password && <div>{errors.password.message}</div>}
-      <button type="submit">regitser</button>
-    </form>
+      <button className='w-[300px] rounded-md bg-[#14B8A6] text-[#fff] py-2 px-5 hover:bg-white hover:text-[#14B8A6] hover:border-[#14B8A6] border cursor-pointer font-serif' type="submit">Regitser</button>
+        </form>
+        <p className='text-center font-serif text-[#555454e9] my-3'>Already have an account? <a className='text-[#14B8A6] font-bold font-serif' href='/auth/login'>Login</a></p>
+      </div>
+    </section>
   );
 };

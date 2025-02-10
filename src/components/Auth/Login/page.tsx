@@ -31,19 +31,19 @@ export const Login = () => {
   };
 
   return (
-   <section className='bg-[gray] w-[100%] h-[100vh] flex justify-center items-center '>
+   <section className='bg-[#111827] w-[100%] h-[100vh] flex justify-center items-center rounded-b-lg '>
 
-   <div className='bg-[#fff] w-[500px] h-[450px] flex flex-col justify-between'>
+   <div className='bg-[#fff] w-[500px] h-[450px] rounded-[10px] flex flex-col justify-between'>
 
     <div className='m-5'>
-      <h1 className='text-[25px] mb-1 pl-3'>Login</h1>
-      <span className='text-[18px] pl-3 text-[grey]'>Welcome! So good to have you back!</span>
+      <h1 className='text-[25px] mb-1 pl-3 font-serif font-bold'>Login</h1>
+      <span className='text-[18px] pl-3 text-[grey] font-serif'>Welcome! So good to have you back!</span>
     </div>
 
     <div className='flex justify-center align-center'>
     <form className='w-[300px]  flex flex-col  gap-7' onSubmit={handleSubmit(onSubmit)}>
       <div>
-      <input className=' p-2 pr-[100px] border-b border-gray-600 outline-none'
+      <input className=' p-2 pr-[100px] border-b border-gray-600 outline-none font-serif'
         type="text"
         placeholder='Username...'
         {...register('username')}
@@ -51,25 +51,25 @@ export const Login = () => {
       {errors?.username && <div>{errors.username.message}</div>}
       </div>
      <div>
-     <input  className='p-2 pr-[100px] border-b border-gray-600 outline-none' 
+     <input  className='p-2 pr-[100px] border-b border-gray-600 outline-none font-serif' 
       placeholder='Name...'
       type="text" 
       {...register('name')} />
      {errors?.name && <div>{errors.name.message}</div>}
      </div>
      <div>
-     <input className='p-2 pr-[100px] border-b border-gray-600 outline-none'
+     <input className='p-2 pr-[100px] border-b border-gray-600 outline-none font-serif'
         placeholder='Password...'
         type="password"
         {...register('password')}
       />
       {errors?.password && <div>{errors.password.message}</div>}
      </div>
-      <button className='bg-[#14B8A6] text-[#fff] py-2 px-5 hover:bg-white hover:text-[#14B8A6] hover:border-[#14B8A6] border cursor-pointer' type="submit">Login</button>
+      <button className='bg-[#14B8A6] text-[#fff] py-2 px-5 hover:bg-white hover:text-[#14B8A6] hover:border-[#14B8A6] border cursor-pointer font-serif' type="submit">Login</button>
     </form>
     </div>
 
-     <p className='text-center mb-5 mr-8'>Don't have an account? <a href='/auth/register'>Register here</a></p>
+     <p className='text-center mb-5 text-[#555454e9] font-serif'>Don't have an account? <a className='text-[#14B8A6] font-bold font-serif' href='/auth/register'>Register here</a></p>
 
    </div>
     
