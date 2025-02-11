@@ -43,7 +43,7 @@ export const Login = () => {
     <div className='flex justify-center align-center'>
     <form className='w-[300px]  flex flex-col  gap-7' onSubmit={handleSubmit(onSubmit)}>
       <div>
-      <input className=' p-2 pr-[100px] border-b border-gray-600 outline-none font-serif'
+      <input className=' p-2 pr-[2rem] w-[300px] border-b border-gray-600 outline-none font-serif'
         type="text"
         placeholder='Username...'
         {...register('username')}
@@ -51,14 +51,14 @@ export const Login = () => {
       {errors?.username && <div>{errors.username.message}</div>}
       </div>
      <div>
-     <input  className='p-2 pr-[100px] border-b border-gray-600 outline-none font-serif' 
+     <input  className='p-2 pr-[2rem] w-[300px] border-b border-gray-600 outline-none font-serif' 
       placeholder='Name...'
       type="text" 
       {...register('name')} />
      {errors?.name && <div>{errors.name.message}</div>}
      </div>
      <div>
-     <input className='p-2 pr-[100px] border-b border-gray-600 outline-none font-serif'
+     <input className='p-2 pr-[2rem] w-[300px] border-b border-gray-600 outline-none font-serif'
         placeholder='Password...'
         type="password"
         {...register('password')}

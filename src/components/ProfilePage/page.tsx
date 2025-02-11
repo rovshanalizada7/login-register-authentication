@@ -32,7 +32,7 @@ export const ProfilePage = () => {
           navigate('/auth/login');
         }}
       >
-        logout
+        Logout
       </button>
     </>
   );

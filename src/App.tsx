@@ -15,7 +15,7 @@ function App() {
       <Route path="/" element={<HomePage />} />
 
       <Route element={<RequireAuth />}>
-        <Route path="/" element={<ProfilePage />} />
+        <Route path="/profile" element={<ProfilePage />} />
       </Route>
 
       <Route element={<NonAuthCheck />}>
