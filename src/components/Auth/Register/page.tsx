@@ -25,8 +25,8 @@ export const Register = () => {
   };
 
   return (
-    <section className='w-[100%] h-[100vh] flex justify-center items-center bg-[url("https://livedemo00.template-help.com/wt_prod-10492/theme/images/slide-2.jpg")] bg-cover bg-center bg-no-repeat'>
-      <div className='bg-[#fff] w-[450px] h-[450px] rounded-[10px]'>
+    <section className='w-[100%] h-[100vh] flex justify-center items-center bg-[url("https://images.unsplash.com/photo-1484807352052-23338990c6c6?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8cmVnaXN0cmF0aW9ufGVufDB8fDB8fHww")] bg-cover bg-center bg-no-repeat'>
+      <div className='bg-[#fff] w-[450px]  rounded-[10px]'>
         <h1 className='text-center text-[30px] font-extrabold my-5 font-serif'>Sign Up</h1>
         <form className='flex flex-col justify-center items-center gap-4 p-3' onSubmit={handleSubmit(onSubmit)}>
       <input
@@ -48,9 +48,12 @@ export const Register = () => {
         {...register('password')}
       />
       {errors?.password && <div>{errors.password.message}</div>}
-      <button className='w-[300px] rounded-md bg-[#14B8A6] text-[#fff] py-2 px-5 mt-4 hover:bg-white hover:text-[#14B8A6] hover:border-[#14B8A6] border cursor-pointer font-serif' type="submit">Regitser</button>
+      <button className='w-[300px] rounded-md bg-[#14B8A6] text-[#fff] py-2 px-5 mt-4 hover:bg-white hover:text-[#14B8A6] hover:border-[#14B8A6] border cursor-pointer font-serif' type="submit">Register</button>
         </form>
         <p className='text-center font-serif text-[#555454e9] my-3'>Already have an account? <a className='text-[#14B8A6] font-bold font-serif' href='/auth/login'>Login</a></p>
+        <div className='flex justify-end'>
+        <a className='text-end font-serif underline mr-5 my-5' href="/">Visit to Home Page</a>
+        </div>
       </div>
     </section>
   );

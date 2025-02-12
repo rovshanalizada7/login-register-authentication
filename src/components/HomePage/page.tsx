@@ -58,7 +58,7 @@ export const HomePage = () => {
     
     <section className="flex flex-col-reverse md:flex-row items-center justify-center min-h-screen px-6 md:px-16">
       <div className="max-w-lg text-center md:text-left">
-        <h2 className="text-4xl font-bold mb-4">Mobile App Development</h2>
+        <h2 className="text-4xl font-bold mb-4">Frontend Development</h2>
         <p className="text-gray-300 mb-6">
           Join us in the exciting world of programming and turn your ideas into reality. Unlock the world of endless possibilities - 
           learn to code and shape the digital future with us.

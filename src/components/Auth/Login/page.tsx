@@ -33,7 +33,7 @@ export const Login = () => {
   return (
    <section className='bg-[#111827] w-[100%] h-[100vh] flex justify-center items-center rounded-b-lg '>
 
-   <div className='bg-[#fff] w-[500px] h-[450px] rounded-[10px] flex flex-col justify-between'>
+   <div className='bg-[#fff] w-[500px]  rounded-[10px] flex flex-col justify-between'>
 
     <div className='m-5'>
       <h1 className='text-[25px] mb-1 pl-3 font-serif font-bold'>Login</h1>
@@ -70,6 +70,7 @@ export const Login = () => {
     </div>
 
      <p className='text-center mb-5 text-[#555454e9] font-serif'>Don't have an account? <a className='text-[#14B8A6] font-bold font-serif' href='/auth/register'>Register here</a></p>
+      <a className='text-end m-3 mr-6  font-serif underline' href="/">Visit to Home Page</a>
 
    </div>
     
