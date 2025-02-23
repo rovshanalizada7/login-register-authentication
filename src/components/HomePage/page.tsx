@@ -64,7 +64,7 @@ export const HomePage = () => {
           learn to code and shape the digital future with us.
         </p>
         <div className="space-x-4">
-          <a href="#" className="bg-[#47b2e4] px-6 py-3 rounded-md font-semibold">Join Now</a>
+          <a href="#" className="bg-[#47b2e4]  transition px-6 py-3 rounded-md font-semibold">Join Now</a>
           <a href="#" className="border border-white px-6 py-3 rounded-md font-semibold hover:bg-[#47b2e4] transition">
             Learn More
           </a>

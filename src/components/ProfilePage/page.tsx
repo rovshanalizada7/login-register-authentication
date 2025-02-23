@@ -23,7 +23,7 @@ export const ProfilePage = () => {
   }, []);
 
   return (
-    <section className='flex flex-col justify-center items-center gap-3 w-full h-[100vh]'>
+    <section className='flex flex-col justify-center items-center gap-4 w-full h-[100vh]'>
       <h1>Welcome to your profile!</h1>
       <div>Id: {profile?.id}</div>
       <div>Username: {profile?.username}</div>
@@ -33,7 +33,7 @@ export const ProfilePage = () => {
           navigate('/auth/login');
         }}
       >
-        Logout
+        Log out
       </button>
     </section>
   );
